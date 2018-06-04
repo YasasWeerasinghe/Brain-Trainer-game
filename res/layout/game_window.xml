@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+
+        <Switch
+            android:id="@+id/sHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hints "
+            android:textColor="#B204DC"
+            android:checked="false"/>
+
+        <Space
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tCountDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout5">
+
+        <Space
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tMathExpression"
+            android:layout_alignLeft="@+id/tCountDown"
+            android:layout_alignStart="@+id/tCountDown"
+            android:gravity="center_horizontal"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:maxLength="7"
+            android:textStyle="bold"
+            android:text=" "
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tGuess"
+            android:textColor="@color/tGuess"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Guess"/>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tMathExpression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:text=""
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tAnswer"
+            android:textColor="@color/tAnswer"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Answer"/>
+
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tInputAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:text="?"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+</HorizontalScrollView>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bDel"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:background="@drawable/game_window_num_pad"
+            android:backgroundTint="@color/bDel"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="DEL"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bHash"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:background="@drawable/game_window_num_pad"
+            android:backgroundTint="@color/bHash"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="#"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/bMinus"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:background="@drawable/game_window_num_pad"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="5"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

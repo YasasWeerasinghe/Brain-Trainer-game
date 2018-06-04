@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yasasweerasinghe.mobilecw01.MainActivity">-->
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    tools:context="com.example.yasasweerasinghe.mobilecw01.MainActivity">
+
+    <Button
+        android:id="@+id/bNewGame"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bContinue"
+        android:layout_alignLeft="@+id/bContinue"
+        android:layout_alignStart="@+id/bContinue"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/b_newgame_shape"
+        android:onClick="gameLevel"
+        android:shadowColor="#FFFAFA"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/new_game"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/bContinue"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bAbout"
+        android:layout_alignLeft="@+id/bAbout"
+        android:layout_alignStart="@+id/bAbout"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/b_continue_shape"
+        android:shadowColor="#FFFAFA"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/Continue"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bAbout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bExit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/b_about_shape"
+        android:onClick="popUp"
+        android:shadowColor="#FFFAFA"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/about"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/bAbout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bAbout"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/b_exit_shape"
+        android:onClick="exitButton"
+        android:shadowColor="#FFFAFA"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/exit"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+</RelativeLayout>

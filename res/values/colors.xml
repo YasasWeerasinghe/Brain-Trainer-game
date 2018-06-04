@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffff00</color>
+    <!--<color name="colorPrimaryDark">#00ffffff</color>-->
+    <color name="noviceText">#ffffff</color>
+    <color name="easyText">#ffff00</color>
+    <color name="mediumText">#ffcc00</color>
+    <color name="guruText">#ff0000</color>
+    <color name="gameLevelWindow">#2874A6</color>
+    <color name="bDel">#FF9B00</color>
+    <color name="bHash">#4ED116</color>
+    <color name="tAnswer">#FFD100</color>
+    <color name="tGuess">#0352FC</color>
+
+    <color name="popUp">#FFED59</color>
+    <color name="tPopHearder">#FF0000</color>
+    <color name="tPopCont1">#470D0D</color>
+    <color name="tPopCont2">#470D0D</color>
+    <color name="tPopCont3">#470D0D</color>
+    <color name="tPopCont4">#470D0D</color>
+
+    <color name="score">#9700FF</color>
+    <color name="scoreWindow">#FCFCFB</color>
+
+   </resources>

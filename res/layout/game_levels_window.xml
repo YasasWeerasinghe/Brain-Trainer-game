@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gameLevelWindow">
+
+    <ImageView
+        android:id="@+id/gameLeveImage"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_above="@+id/novice"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/game_levelo_window_logo" />
+
+    <TextView
+        android:id="@+id/novice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/easy"
+        android:layout_alignEnd="@+id/easy"
+        android:layout_alignLeft="@+id/medium"
+        android:layout_alignRight="@+id/easy"
+        android:layout_alignStart="@+id/medium"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:onClick="gameLevelNovice"
+        android:text="NOVICE"
+        android:textColor="@color/noviceText"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/medium"
+        android:layout_alignEnd="@+id/medium"
+        android:layout_alignLeft="@+id/medium"
+        android:layout_alignRight="@+id/medium"
+        android:layout_alignStart="@+id/medium"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:onClick="gameLevelEasy"
+        android:text="EASY"
+        android:textColor="@color/easyText"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:onClick="gameLevelMediam"
+        android:text="MEDIUM"
+        android:textColor="@color/mediumText"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/guru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/medium"
+        android:layout_alignLeft="@+id/medium"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/medium"
+        android:layout_alignStart="@+id/medium"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="serif"
+        android:onClick="gameLevelGuru"
+        android:gravity="center_horizontal"
+        android:text="GURU"
+        android:textColor="@color/guruText"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

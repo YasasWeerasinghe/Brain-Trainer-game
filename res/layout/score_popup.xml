@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/score"
+    android:background="@color/scoreWindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/soce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/score"
+            android:text="@string/score"
+            android:textStyle="bold"
+            android:textSize="26sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Score:"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="130dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFAA00"
+            android:id="@+id/tScore"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Game Level: "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="170dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFAA00"
+            android:id="@+id/tLevel"
+            android:text=""/>
+
+
+        <Button
+            android:id="@+id/bHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="140dp"
+            android:background="#006CFF"
+            android:textColor="#FFFFFF"
+            android:onClick="bHome"
+            android:text="Home" />
+
+
+</RelativeLayout>

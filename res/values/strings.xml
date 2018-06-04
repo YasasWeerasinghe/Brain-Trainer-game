@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Brain Calc</string>
+    <string name="about">About</string>
+    <string name="Continue">Continue</string>
+    <string name="new_game">New Game</string>
+    <string name="exit">Exit</string>
+    <string name="popup">How to play</string>
+
+    <string name="tPopHearder"><b>Brain Calc</b></string>
+
+    <string name="tPopCont1">This’s a Math game and it have 4 levels as Novice, Easy, Medium, Guru.</string>
+
+    <string name="tPopCont2">To solve the expression, you’ll get <b>10 seconds</b> and when you solve the problems press <b><u>#</u></b> and go to the next question.
+        If you fail to answer the question writhing the time its automatically skip the question to the next.</string>
+
+    <string name="tPopCont3">The marks will calculate according to the game level and the time you answer each question.
+        You’ll get 10 questions in every level.</string>
+
+    <string name="tPopCont4">
+        <b>Novice level - </b> 2 Number Expressions \n
+        <b>Easy level - </b> 2 to 3 Number Expressions\n
+        <b>Medium level – </b> 2 to 4 Number Expressions\n
+        <b>Guru level – </b> 2 to 6 Number Expressions </string>
+
+    <string name="score">Brian Trainer Result</string>
+
+
+
+</resources>

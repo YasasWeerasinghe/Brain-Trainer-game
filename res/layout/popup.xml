@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popUp"
+    android:background="@color/popUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tPopHearder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/tPopHearder"
+            android:text="@string/tPopHearder"
+            android:textSize="16sp"/>
+
+
+
+        <TextView
+            android:id="@+id/tPopCont1"
+            android:textColor="@color/tPopCont1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tPopCont2"
+            android:layout_alignStart="@+id/tPopCont2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="22dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/tPopCont1" />
+
+        <TextView
+            android:id="@+id/tPopCont2"
+            android:textColor="@color/tPopCont2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tPopCont1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="21dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/tPopCont2" />
+
+        <TextView
+            android:id="@+id/tPopCont3"
+            android:textColor="@color/tPopCont3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tPopCont2"
+            android:layout_alignStart="@+id/tPopCont2"
+            android:layout_below="@+id/tPopCont2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="21dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/tPopCont3" />
+
+
+        <TextView
+            android:id="@+id/tPopCont4"
+            android:textColor="@color/tPopCont4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tPopCont3"
+            android:layout_alignStart="@+id/tPopCont3"
+            android:layout_below="@+id/tPopCont3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/tPopCont4" />
+
+    </LinearLayout>
+</ScrollView>
